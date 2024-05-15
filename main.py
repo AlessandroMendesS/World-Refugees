@@ -20,6 +20,19 @@ def botao_login():
         main = customtkinter.CTk()
         main.geometry("1280x720")
         main.title("Página Principal")
+        caixa1 = customtkinter.CTkFrame (master=main, width=320, height=360)
+        caixa1.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+
+
+
+
+
+
+
+
+
+
+
         main.mainloop()
     else:
         Erro.configure(text="Email ou senha incorretos")
