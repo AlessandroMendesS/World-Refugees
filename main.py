@@ -20,17 +20,6 @@ def botao_login():
         main = customtkinter.CTk()
         main.geometry("1280x720")
         main.title("Página Principal")
-        caixa1 = customtkinter.CTkFrame (master=main, width=320, height=360)
-        caixa1.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
-
-
-
-
-
-
-
-
-
 
 
         main.mainloop()
@@ -41,11 +30,11 @@ app = customtkinter.CTk()
 app.geometry("600x440")
 app.title('Login')
 
-img1 = ImageTk.PhotoImage(Image.open("image.png"))
+img1 = ImageTk.PhotoImage(Image.open("refu.jpg"))
 Plano1 = customtkinter.CTkLabel(master=app, image=img1)
 Plano1.pack()
 
-Caixa = customtkinter.CTkFrame(master=Plano1, width=320, height=360, corner_radius=15)
+Caixa = customtkinter.CTkFrame(master=Plano1, width=320, height=360, corner_radius=6)
 Caixa.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 
 Plano2 = customtkinter.CTkLabel(master=Caixa, text="Faça login com sua conta", font=("Century Gothic", 20))
@@ -66,8 +55,8 @@ Login.place(x=50, y=240)
 Erro = customtkinter.CTkLabel(master=Caixa, text="", font=("Century Gothic", 12), text_color="red")
 Erro.place(x=85, y=280)
 
-img2 = customtkinter.CTkImage(Image.open("124010.png").resize((20, 20)))
-img3 = customtkinter.CTkImage(Image.open("Google__G__Logo.svg.webp").resize((20, 20)))
+img2 = customtkinter.CTkImage(Image.open("face.jpg").resize((20, 20)))
+img3 = customtkinter.CTkImage(Image.open("google.jpg").resize((20, 20)))
 
 google = customtkinter.CTkButton(master=Caixa, image=img3, text="Google", width=100, height=20, corner_radius=6, compound="left", text_color="black",
                             fg_color="white",
@@ -75,8 +64,8 @@ google = customtkinter.CTkButton(master=Caixa, image=img3, text="Google", width=
 google.place(x=50, y=320)
 
 facebook = customtkinter.CTkButton(master=Caixa, image=img2, text="Facebook", width=100, height=20, corner_radius=6, compound="left", text_color="black",
-                                   fg_color="white",
-                                   hover_color="#AAAAAA")
+                                fg_color="white",
+                                hover_color="#AAAAAA")
 facebook.place(x=170, y=320)
 
 app.mainloop()
