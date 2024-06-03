@@ -20,6 +20,7 @@ def botao_login():
         main = customtkinter.CTk()
         main.geometry("1280x720")
         main.title("Página Principal")
+        main.resizable(False, False)
 
 
         main.mainloop()
@@ -27,8 +28,9 @@ def botao_login():
         Erro.configure(text="Email ou senha incorretos")
 
 app = customtkinter.CTk()
-app.geometry("600x440")
+app.geometry("1280x1000")
 app.title('Login')
+app.resizable(False, False)
 
 img1 = ImageTk.PhotoImage(Image.open("refu.jpg"))
 Plano1 = customtkinter.CTkLabel(master=app, image=img1)
