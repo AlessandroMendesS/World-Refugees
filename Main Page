@@ -2,6 +2,49 @@ import tkinter
 import customtkinter
 from PIL import ImageTk, Image
 
+
+
+
+# def opcoes():
+#     main.destroy()
+#     Perfil = customtkinter.CTk()
+#     Perfil.geometry("500x800")
+#     Perfil.title("Perfil")
+
+
+#     Caixa = customtkinter.CTkFrame(master=Perfil, width=450, height=900, corner_radius=50, fg_color="white")
+#     Caixa.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
+
+#     img2 = customtkinter.CTkImage(Image.open("home-removebg-preview.png").resize((20, 20)))
+
+#     Home = customtkinter.CTkButton(master=Caixa, image=img2, text="", width=50, height=20, corner_radius=100, compound="left", text_color="black",
+#                                     fg_color="transparent",
+#                                     hover_color="#CDCDCB")
+#     Home.place(x=75, y=825)
+
+#     img3 = customtkinter.CTkImage(Image.open("opcoes-removebg-preview.png").resize((20, 20)))
+
+#     Opcoes = customtkinter.CTkButton(master=Caixa, image=img3, text="", width=50, height=20, corner_radius=100, compound="left", text_color="black",
+#                                     fg_color="transparent",
+#                                     hover_color="#CDCDCB",
+#                                     command=opcoes)
+#     Opcoes.place(x=325, y=825)
+
+#     img4 = customtkinter.CTkImage(Image.open("Cora.png").resize((20, 20)))
+
+#     Favoritos = customtkinter.CTkButton(master=Caixa, image=img4, text="", width=50, height=20, corner_radius=100, compound="left", text_color="black",
+#                                     fg_color="transparent",
+#                                     hover_color="#CDCDCB")
+#     Favoritos.place(x=200, y=825)
+
+
+#     Perfil.mainloop()
+
+
+
+
+
+
 customtkinter.set_appearance_mode('ligth')
 
 
@@ -9,9 +52,6 @@ main = customtkinter.CTk()
 main.geometry("500x800")
 main.title("Página Principal")
 
-# image = Image.open("alemanha.png") 
-# image = image.resize((200,200))
-# photo = ImageTk.PhotoImage(image)
 
 
 
@@ -43,24 +83,23 @@ Caixa2 = customtkinter.CTkFrame(master=Caixa, width=300, height=450, fg_color="#
 Caixa2.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 Caixa2.place(x=0, y=90)
 
-# imagem_label = tkinter.Label(master=Caixa2, image=photo)
-# imagem_label.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 
-img2 = customtkinter.CTkImage(Image.open("home.png").resize((20, 20)))
+img2 = customtkinter.CTkImage(Image.open("home-removebg-preview.png").resize((20, 20)))
 
 Home = customtkinter.CTkButton(master=Caixa, image=img2, text="", width=50, height=20, corner_radius=100, compound="left", text_color="black",
                                 fg_color="transparent",
                                 hover_color="#CDCDCB")
 Home.place(x=75, y=825)
 
-img3 = customtkinter.CTkImage(Image.open("opcoes.png").resize((20, 20)))
+img3 = customtkinter.CTkImage(Image.open("opcoes-removebg-preview.png").resize((20, 20)))
 
 Opcoes = customtkinter.CTkButton(master=Caixa, image=img3, text="", width=50, height=20, corner_radius=100, compound="left", text_color="black",
                                 fg_color="transparent",
-                                hover_color="#CDCDCB")
+                                hover_color="#CDCDCB"
+                            )
 Opcoes.place(x=325, y=825)
 
-img4 = customtkinter.CTkImage(Image.open("coracao.png").resize((20, 20)))
+img4 = customtkinter.CTkImage(Image.open("Cora.png").resize((20, 20)))
 
 Favoritos = customtkinter.CTkButton(master=Caixa, image=img4, text="", width=50, height=20, corner_radius=100, compound="left", text_color="black",
                                 fg_color="transparent",
